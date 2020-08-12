@@ -1,89 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content=" Menu page with different types, description, size and prices for pizza">
-        <!---add all types of pizza items-->
-    <meta name="keywords" content="Hawaiian BBQ Chicken,Cherry tomato and argula,Margherita,Meat classic,Vegetarian classic,Cheese classic,Triple classic,BBQ Chicken,Supper supreme,Grilled Chicken Rustico,Hot Jalapeno Pepper and meat,Mexican Fajita,Pizza with Chilli,Spicy Beef,Butter Chicken pizza,Italian Hot Pizza,Chicken and Vegies">
+    <!---add all types of pizza items-->
+    <meta name="keywords"
+        content="Hawaiian BBQ Chicken,Cherry tomato and argula,Margherita,Meat classic,Vegetarian classic,Cheese classic,Triple classic,BBQ Chicken,Supper supreme,Grilled Chicken Rustico,Hot Jalapeno Pepper and meat,Mexican Fajita,Pizza with Chilli,Spicy Beef,Butter Chicken pizza,Italian Hot Pizza,Chicken and Vegies">
     <meta name="author" content="Dough's Pizza">
-    
+
+    <link rel="shortcut icon" type="image/png" href="Images/Icon_P.jpg">
+    <link rel="stylesheet" href="../css/style.css">
+
     <title>Pizza Menu</title>
 </head>
-<body>
 
-    <div id="grid-container">
-        <div class="card-container">
-            <img class="pizza-image" src="images/pizza1.png" alt="A delicious Hawaiian BBQ Chicken pizza">
-            <p class="pizza-description"><b>M(17$),L(21$),XL(24$)</b>A delicious Hawaiian Chicken BBQ Italian Pizza with Chicken, pineapple and extra mozzarella cheese.</p>
+<body>
+    <!--head section-->
+    <div id="mobile-header">
+        <div id="logo-header">
+            <img id="mob-logo-img" src="/Images/pizza-logo.png" alt="Logo image of okotoks pizza shop">
         </div>
-        <div class="card-container">
-            <img class="pizza-image" src="images/pizza2.png" alt="A delicious Cherry tomato and argula  pizza">
-            <p class="pizza-description"><b>M(15$),L(19$),XL(22$)</b>A delicious Italian pizza with cherry tomato, chicken, argula and mozzarella cheese.</p>
+        <div id="header-space">
         </div>
-       
-        <div class="card-container">
-            <img class="pizza-image" src="images/pizza1.png" alt="A delicious Margherita pizza">
-            <p class="pizza-description"><b>M(15$),L(19$),XL(22$)</b>A delicious Margherita pizza with marinated tomatoes, parmesan and mozzarella cheese.</p>
+        <div id="mobile-hamburger-menu">
+
+            <input type="checkbox" name="mobile-menu-checkbox" id="mobile-menu-checkbox">
+
+            <div id="mobile-hamburger-container">
+                <span id="mobile-line-1" class="mobile-hamburger-line"></span>
+                <span id="mobile-line-2" class="mobile-hamburger-line"></span>
+                <span id="mobile-line-3" class="mobile-hamburger-line"></span>
+                <span id="mobile-line-4" class="mobile-hamburger-line"></span>
+
+            </div>
+
+            <div id="mobile-header-menu">
+
+                <a href="/pages/Location.html">Location</a>
+                <a href="/pages/AboutUs.html">About Us</a>
+                <a href="/pages/Menu.html">Menu</a>
+                <a href="/index.html">Home</a>
+            </div>
+
         </div>
-        <div class="card-container">
-            <img class="pizza-image" src="images/pizza2.png" alt="A delicious Meat classic pizza">
-            <p class="pizza-description"><b>M(17$),L(21$),XL(24$)</b>A delicious Meat classic pizza with pepperoni, Italian sausage, beef topping and mozzarella cheese.</p>
-        </div>
-        <div class="card-container">
-            <img class="pizza-image" src="images/pizza3.jpg" alt="A delicious Vegetarian classic pizza">
-            <p class="pizza-description"><b>M(15$),L(19$),XL(22$)</b>A delicious Vegetarian pizza with green pepper, red onion, tomato and mozzarella cheese.</p>
-        </div>
-        <div class="card-container">
-            <img class="pizza-image" src="images/pizza1.png" alt="A delicious Cheese classic pizza">
-            <p class="pizza-description"><b>M(15$),L(19$),XL(22$)</b>A delicious Cheese pizza with extra mozzarella cheese and choice of favourite toppings (any two).</p>
-        </div>
-        <div class="card-container">
-            <img class="pizza-image" src="images/pizza2.png" alt="A delicious Triple classic pizza">
-            <p class="pizza-description"><b>M(15$),L(19$),XL(22$)</b>A delicious Triple classes pizza with chicken, bell pepper, spring onion and mozzarella cheese.</p>
-        </div>
-        <div class="card-container">
-            <img class="pizza-image" src="images/pizza3.jpg" alt="A delicious BBQ Chicken pizza">
-            <p class="pizza-description"><b>M(17$),L(21$),XL(24$)</b>A delicious BBQ Chicken pizza with seasoned grilled chicken breast, red onion, green peppers, smoked aged cheddar and mozzarella cheese.</p>
-        </div>
-        <div class="card-container">
-            <img class="pizza-image" src="images/pizza1.png" alt="A delicious Supper supreme  pizza">
-            <p class="pizza-description"><b>M(17$),L(21$),XL(24$)</b>A delicious Supreme pizza with pepperoni, Italian sausage, mild sausage, beef topping, green pepper, sliced mushrooms, black olives and mozzarella cheese.</p>
-        </div>
-        <div class="card-container">
-            <img class="pizza-image" src="images/pizza2.png" alt="A delicious Grilled Chicken Rustico pizza">
-            <p class="pizza-description"><b>M(17$),L(21$),XL(24$)</b>A delicious Seasoned grilled chicken pizza with chicken breast, roasted red pepper, pesto marinated tomatoes and mozzarella cheese.</p>
-        </div>
-        <div class="card-container">
-            <img class="pizza-image" src="images/pizza3.jpg" alt="A delicious Hot Jalapeno Pepper and meat pizza">
-            <p class="pizza-description"><b>M(15$),L(19$),XL(22$)</b>A delicious Jalapeno Pepper and meat pizza with hot summer jalapeno pepper and meat and mozzarella cheese.</p>
-        </div>
-        <div class="card-container">
-            <img class="pizza-image" src="images/pizza1.png" alt="A delicious Mexican Fajita pizza">
-            <p class="pizza-description"><b>M(17$),L(21$),XL(24$)</b>A delicious Mexican pizza with fajita chicken, olives, jalapenos and mozzarella cheese.</p>
-        </div>
-        <div class="card-container">
-            <img class="pizza-image" src="images/pizza2.png" alt="A delicious Pizza with Chilli pizza">
-            <p class="pizza-description"><b>M(15$),L(19$),XL(22$)</b>A delicious Chilli pizza with red and green chilli and mozzarella cheese.</p>
-        </div>
-        <div class="card-container">
-            <img class="pizza-image" src="images/pizza3.jpg" alt="A delicious Spicy Beef pizza">
-            <p class="pizza-description"><b>M(17$),L(21$),XL(24$)</b>A delicious Spicy Beef pizza with extra chilli, roasted beef and mozzarella cheese.</p>
-        </div>
-        <div class="card-container">
-            <img class="pizza-image" src="images/pizza1.png" alt="A delicious Butter Chicken pizza">
-            <p class="pizza-description"><b>M(17$),L(21$),XL(24$)</b>A delicious Butter Chicken pizza with red pepper, red onion, cilantro and mozzarella cheese.</p>
-        </div>
-        <div class="card-container">
-            <img class="pizza-image" src="images/pizza2.png" alt="A delicious Italian Hot pizza">
-            <p class="pizza-description"><b>M(15$),L(19$),XL(22$)</b>A delicious Italian Hot pizza with hot sauce, tomato, basil and mozzarella cheese.</p>
-        </div>
-        <div class="card-container">
-            <img class="pizza-image" src="images/pizza3.jpg" alt="A delicious Chicken and Vegies pizza">
-            <p class="pizza-description"><b>M(17$),L(21$),XL(24$)</b>A delicious pan pizza with chicken, green and red bell pepper, onion and mozzarella cheese.</p>
-        </div>
-        
+    </div>
+    <!--closing for hamburger div-->
+
+
+
+
+    <div>
+        <h2 class="text2-heading">We are special!</h2>
+        <p class="about-p">We’re a small but nimble family-run take out and delivery pizza shop in Okotoks, Alberta.
+            When we’re not scouring the globe (okay, the prairies) for the freshest, ripest and boldest ingredients,
+            we’re crafting perfect pizzas for you and your family to enjoy. </p>
     </div>
     
+
+    <!--download menu-->
+    <div class="text-embed">
+
+        <a href="/Images/PizzaMenu.pdf" download>
+            Download the Menu!
+        </a>
+
+    </div>
+
+    <!--body section-->
+    <div id="menu-grid-container">
+
+
+        <div class="card-container">
+          
+            <p class="menu-items">Hawain Pizza  <a href="#">Order Now!</a></p>
+            <img class="pizza-image" src="/Images/PizzaType/HawaiinChicken.jpg"
+                alt="A delicious Hawaiian BBQ Chicken pizza">
+            <p class="pizza-description"><b>M(17$),L(21$),XL(24$)</b>A delicious Hawaiian Chicken BBQ Italian Pizza
+                with Chicken, pineapple and extra mozzarella cheese.</p>
+        </div>
+        <div class="card-container">
+            <p class="menu-items">Italian Pizza <a href="#">Order Now!</a></p>
+            <img class="pizza-image" src="/Images/PizzaType/TomatosArgula.jpg"
+                alt="A delicious Cherry tomato and argula  pizza">
+            <p class="pizza-description"><b>M(15$),L(19$),XL(22$)</b>A delicious Italian pizza with cherry tomato,
+                chicken, argula and mozzarella cheese.</p>
+        </div>
+
+
+        <div class="card-container">
+            <p class="menu-items">Margherita Pizza <a href="#">Order Now!</a></p>
+            <img class="pizza-image" src="/Images/PizzaType/Margarita.jpg" alt="A delicious Margherita pizza">
+            <p class="pizza-description"><b>M(15$),L(19$),XL(22$)</b>A delicious Margherita pizza with marinated
+                tomatoes, parmesan and mozzarella cheese.</p>
+        </div>
+        <div class="card-container">
+            <p class="menu-items">Meat Pizza <a href="#">Order Now!</a></p>
+            <img class="pizza-image" src="/Images/PizzaType/MeatClassic.jpg" alt="A delicious Meat classic pizza">
+            <p class="pizza-description"><b>M(17$),L(21$),XL(24$)</b>A delicious Meat classic pizza with pepperoni,
+                Italian sausage, beef topping and mozzarella cheese.</p>
+        </div>
+        <div class="card-container">
+            <p class="menu-items">Vegetarian Pizza <a href="#">Order Now!</a></p>
+            <img class="pizza-image" src="/Images/PizzaType/vegetarianPizza.jpg"
+                alt="A delicious Vegetarian classic pizza">
+            <p class="pizza-description"><b>M(15$),L(19$),XL(22$)</b>A delicious Vegetarian pizza with green pepper,
+                red onion, tomato and mozzarella cheese.</p>
+        </div>
+        <div class="card-container">
+            <p class="menu-items">Cheese Pizza <a href="#">Order Now!</a></p>
+            <img class="pizza-image" src="/Images/PizzaType/CheeseClassis.jpg" alt="A delicious Cheese classic pizza">
+            <p class="pizza-description"><b>M(15$),L(19$),XL(22$)</b>A delicious Cheese pizza with extra mozzarella
+                cheese and choice of favourite toppings (any two).</p>
+        </div>
+
+        <div class="card-container">
+            <p class="menu-items">BBQ Chicken Pizza <a href="#">Order Now!</a></p>
+            <img class="pizza-image" src="/Images/PizzaType/ChickenBBQ.jpg" alt="A delicious BBQ Chicken pizza">
+            <p class="pizza-description"><b>M(17$),L(21$),XL(24$)</b>A delicious BBQ Chicken pizza with seasoned
+                grilled chicken breast, red onion, green peppers, smoked aged cheddar and mozzarella cheese.</p>
+        </div>
+        <div class="card-container">
+            <p class="menu-items">Super Supreme Pizza <a href="#">Order Now!</a></p>
+            <img class="pizza-image" src="/Images/PizzaType/superSupreme.jpg" alt="A delicious Supper supreme  pizza">
+            <p class="pizza-description"><b>M(17$),L(21$),XL(24$)</b>A delicious Supreme pizza with pepperoni,
+                Italian sausage, mild sausage, beef topping, green pepper, sliced mushrooms, black olives and
+                mozzarella cheese.</p>
+        </div>
+        <div class="card-container">
+            <p class="menu-items">Seasoned grilled chicken Pizza <a href="#">Order Now!</a></p>
+            <img class="pizza-image" src="/Images/PizzaType/ChickenRustico.jpg"
+                alt="A delicious Grilled Chicken Rustico pizza">
+            <p class="pizza-description"><b>M(17$),L(21$),XL(24$)</b>A delicious Seasoned grilled chicken pizza with
+                chicken breast, roasted red pepper, pesto marinated tomatoes and mozzarella cheese.</p>
+        </div>
+        <div class="card-container">
+            <p class="menu-items">Jalapeno Pepper and Meat Pizza <a href="#">Order Now!</a></p>
+            <img class="pizza-image" src="/Images/PizzaType/jalapeno-pepper-and-meat.jpg"
+                alt="A delicious Hot Jalapeno Pepper and meat pizza">
+            <p class="pizza-description"><b>M(15$),L(19$),XL(22$)</b>A delicious Jalapeno Pepper and meat pizza with
+                hot summer jalapeno pepper and meat and mozzarella cheese.</p>
+        </div>
+        <div class="card-container">
+            <p class="menu-items">Mexican Pizza <a href="#">Order Now!</a></p>
+            <img class="pizza-image" src="/Images/PizzaType/Mexican.jpg" alt="A delicious Mexican Fajita pizza">
+            <p class="pizza-description"><b>M(17$),L(21$),XL(24$)</b>A delicious Mexican pizza with fajita chicken,
+                olives, jalapenos and mozzarella cheese.</p>
+        </div>
+        <div class="card-container">
+            <p class="menu-items">Chilli Pizza <a href="#">Order Now!</a></p>
+            <img class="pizza-image" src="/Images/PizzaType/ChilliPizza.jpg" alt="A delicious Pizza with Chilli pizza">
+            <p class="pizza-description"><b>M(15$),L(19$),XL(22$)</b>A delicious Chilli pizza with red and green
+                chilli and mozzarella cheese.</p>
+        </div>
+        <div class="card-container">
+            <p class="menu-items">Spicy Beef Pizza <a href="#">Order Now!</a></p>
+            <img class="pizza-image" src="/Images/PizzaType/SpicyBeef.jpg" alt="A delicious Spicy Beef pizza">
+            <p class="pizza-description"><b>M(17$),L(21$),XL(24$)</b>A delicious Spicy Beef pizza with extra chilli,
+                roasted beef and mozzarella cheese.</p>
+        </div>
+        <div class="card-container">
+            <p class="menu-items">Butter Chicken Pizza <a href="#">Order Now!</a></p>
+            <img class="pizza-image" src="/Images/PizzaType/ButterChicken.jpg" alt="A delicious Butter Chicken pizza">
+            <p class="pizza-description"><b>M(17$),L(21$),XL(24$)</b>A delicious Butter Chicken pizza with red
+                pepper, red onion, cilantro and mozzarella cheese.</p>
+        </div>
+        <div class="card-container">
+            <p class="menu-items">Italian Hot Pizza <a href="#">Order Now!</a></p>
+            <img class="pizza-image" src="/Images/PizzaType/ItallianHotPizza.jpg" alt="A delicious Italian Hot pizza">
+            <p class="pizza-description"><b>M(15$),L(19$),XL(22$)</b>A delicious Italian Hot pizza with hot sauce,
+                tomato, basil and mozzarella cheese.</p>
+        </div>
+        <div class="card-container">
+            <p class="menu-items">Chicken and Vegies Pizza <a href="#">Order Now!</a></p>
+            <img class="pizza-image" src="/Images/PizzaType/ChickenVegies.jpg"
+                alt="A delicious Chicken and Vegies pizza">
+            <p class="pizza-description"><b>M(17$),L(21$),XL(24$)</b>A delicious pan pizza with chicken, green and
+                red bell pepper, onion and mozzarella cheese.</p>
+        </div>
+
+    </div>
+
+    <!--social media section-->
+    <div id="body-content4-socialmedia">
+        <div>
+            <h2 class="text2-heading">Connet!</h2>
+        </div>
+        <div>
+            <h2 class="text2-heading">Give Feedback...</h2>
+
+        </div>
+        <div id="social-container">
+            <a href="#"> <img class="Social-imgs" src="/Images/FB.png" alt="social media image for Facebook"></a>
+            <a href="#"> <img class="Social-imgs" src="/Images/TWT.png" alt="social media image for Twitter"></a>
+            <a href="#"> <img class="Social-imgs" src="/Images/INST.png" alt="social media image for Instagram"> </a>
+        </div>
+
+    </div>
+    <div id="id-top">
+        <a href="#top">| Go to Top |</a>
+
+    </div>
+
+    <!--footer section-->
+    <div id="footer">
+        <div>
+            <a href="/pages/Privacy.html">Privacy</a>
+        </div>
+        <div>
+            <a href="/pages/Privacy.html">Accessibility</a>
+        </div>
+        <div>
+            <a href="/pages/Privacy.html">Term of Use</a>
+        </div>
+
+    </div>
+    <!---closing for Footer Section-->
+
+
+
 </body>
+
 </html>

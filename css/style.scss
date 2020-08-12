@@ -1,7 +1,19 @@
+// _variables AND _mixins files
+@import '_variables';
+
+
+/////////////
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto Slab', serif;
+    //font-family: 'Recursive', sans-serif;
+
+
 }
+
+
+
 #mobile-header
     {   
         display: grid;
@@ -17,6 +29,7 @@
           #mob-logo-img{ 
             width: 100%;
                      }
+   
                     }
     }
     #body-content{
@@ -33,8 +46,10 @@
     }
     #bg-image1{
         width: 100%;
-        opacity: 1;
-        
+        opacity: 1;     
+    }
+    #menu-head-img{
+        width: 100%;
         
     }
 
@@ -48,7 +63,7 @@
    // margin: 10vh 0;
     color:#f4d4abff;
    background-color:whitesmoke;
-
+    }
     
     //for the header section, defined the height as 20vh
      //hamburger menu
@@ -98,18 +113,29 @@
             min-height: 10vh;
 
             a {
-                color:black;
+                color:$font-color-black;
                 text-decoration: none;
                 font-weight: bold;
                 font-size: 1.5em;
             }
         }
-    }    
+    }  
+    .menu-items{
+                color:$font-color-red;;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 1.2em;
+                text-align: center;
+    }  
+  
 
     //
 
-    #phone_num{
-        font-size: 2em;
+    .spacer{
+        font-size: 1.3em;
+        text-decoration: none;
+        color: $font-color-black;
+        font-weight: bold;
         
     }
     //devided the body section into 3 subsection with 30vh, 30vh and 20vh
@@ -131,16 +157,40 @@
     }
     .text1-heading{
         
-        color:darkred;
+        color: $font-color-red;
         text-align: center;
-       
-    }
+        text-decoration: none;
+           }
+    #a-headTxt{
+        
+        color:$font-color-red;
+        text-align: center;
+        text-decoration: none;
+           }
+           
+
     .text2-heading{
         color: black;
         text-align: center;
+        text-decoration: none;
+    }
+   
+    #conten1-img{
+        width: 100%;
     }
     #bg-image1{
         width: 100%;
+    }
+    .image-alignment{
+        width: 100%;
+    }
+//not working on menu page check...
+    .text-embed{
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.5rem;
+        align-content: center;
     }
     //pagination
     .pagination {
@@ -148,14 +198,14 @@
       }
       
       .pagination a {
-        color: black;
+        color: $font-color-black;
         float: left;
         padding: 8px 16px;
         text-decoration: none;
       }
       
       .pagination a.active {
-        background-color:darkred;
+        background-color:$font-color-red;
         color: white;
       }
       
@@ -179,21 +229,31 @@
 
     }
     #conten3-menu-link{
-        color:black;
+        color:$font-color-black;
         text-align: center;
         text-decoration: none;
-        
     }
+   
+    
 
     //social media content
    #body-content4-socialmedia{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    #social-container{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+
+    }
 
    }
    .Social-imgs{
        
     height: 60px;
-
-
+ 
    }
 //for the footer section, defined the height as 20vh
     #footer
@@ -203,33 +263,192 @@
         background-color: #f4d4abff;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        column-gap: 5vw;
+        column-gap: 3vw;
         justify-items: center;
         align-items: center;
-        font-size: 1.2em;   
-        font-weight: bold; 
-      
-        
-        
+        font-size: 1.1em;   
+        font-weight: bold;   
     }
+    
     #footer a {
-        color:black;
+        color:$font-color-red;
         text-decoration: none;
         transition: font-size 0.25s ease-in-out;
-        
+        // margin-left: 2vh;
+      //  margin-right: 2vh;
 
     }
-
-
-
-}//closing for grid container
-  
-  
-@media (max-width: 480px) {
-    #body-content1 {
-        background-image: url('../Images/indexpizza.jpg');
+    #id-top{
+        color:$font-color-red;
+       margin: 2vh 0 2vh 0;
+        text-decoration: none;
     }
+ 
+#menu-grid-container {
+    width: 100%;
+    //margin-left: 5%;
+    margin-top: 2vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-gap: 5vw;
+    row-gap: 5vw;
+    
 }
+
+.card-container {
+    position: relative;
+    box-shadow: 0px 0px 0px grey;
+}
+
+.card-container:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 7px grey;
+    transition: box-shadow 0.25s ease-in-out;
+}
+
+.card-container:hover > .pizza-description {
+    opacity: 1;
+    box-shadow: 5px 5px 7px grey;
+    top: 20vh;
+    transition: all 0.25s ease-in-out;
+}
+
+.pizza-image {
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+    margin: 3vh 0;
+}
+
+.pizza-description {
+    text-align: center;
+    opacity: 0;
+    padding: 10px;
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    box-shadow: 0px 0px 0px grey;
+    top: 0;
+}
+ 
+//style for about us page//
+
+.about-img{
+    width: 100%;
+    margin: 2vh 0;
+
+}
+.about-p{
+    color: $font-color-black;
+    text-align:justify;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    font-size: 1.3rem;
+}
+#about-content{
+    width: 100%;
+    min-height: 40vh;
+    
+   }
+#about-us1{
+    width: 100%;
+    min-height: 20vh;
+    
+
+}
+#about-us2{
+
+    width: 100%;
+    min-height: 20vh;
+    margin: 3vh 0;
+    
+}
+
+.privacy-contact{
+    color: $font-color-red;
+    
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+//end of about-us page 
+
+//location page
+#location-content{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+   // margin: 3vh 0;
+}
+#content-1
+{
+    width: 100%;
+    min-height: 30vh;
+
+}
+#content-2
+{
+    width: 100%;
+    min-height: 30vh;
+
+}
+
+
+.text-location{
+    color:$font-color-black;
+    text-align: center;
+    font-size: 2rem;
+    margin: 3vh;
+}
+//end of location page
+
+  //privacy page
+  .privacy-content1{
+    width: 100%;
+    display: grid; 
+    text-align: center;
+    font-size: 1.1rem;
+  }
+.privacy-content2{
+   width: 100%;
+   //text-align: center;
+   text-align: center;
+   margin: 5vh 0;
+}
+  //end of privacy page
+
+  //animations
+  
+  //order now animation
+  #order-animate{
+    width: 100px;
+    //height: 50px;
+    background-color: #f4d4abff;
+    font-weight: bold;
+   position: relative;
+    animation: mymove 5s infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes mymove {
+    from {left: 0px;}
+    to {left: 600px;}
+  }
+  //phone no animation
+  #phone-animate{
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px blue;
+    }
+    
+    to {
+      text-shadow: 0 0 20px yellow;
+    }
+  }
+
+  //end animations
+
 
 @media (min-width: 481px) and (max-width: 1024px) {
     #body-content1{
