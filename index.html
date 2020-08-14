@@ -11,21 +11,23 @@
     <meta name="author" content="Dough's Pizza">
 
     <!---for image icon on explorer-->
-    <link rel="shortcut icon" type="image/png" href="Images/Icon_P.jpg">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="Images/pizza-logo.png">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 
 
-    <title>Welcome to Okotoks Pizza</title>
+    <title>Welcome to Okotoks Pizza </title>
 </head>
 
 <body id="grid-container">
-    <!---Header Section for menu, will change these ids to hamburger menu for mobile -->
+    <!---Mobile menu header section (for phone and ipad screens) -->
     <div id="mobile-header">
         <div id="logo-header">
-            <img class="image-alignment" src="Images/pizza-logo.png" alt="Logo image of okotoks pizza shop">
+            <img id="pizza-logo" class="image-alignment" src="Images/pizza-logo.png"
+                alt="Logo image of okotoks pizza shop">
         </div>
         <div id="header-space">
-            
+            <a class="spacer" href="tel:4031231234">(403)123-1234</a>
+
         </div>
 
         <div id="mobile-hamburger-menu">
@@ -50,49 +52,55 @@
 
         </div>
         <!--closing for hamburger div-->
+    </div>
+    <!--closing for mebile menu div-->
+
+
+    <!---menu for desktop    -->
+    <div id="desktop-menu-header">
+        <div id="desktop-logo">
+            <img id="pizza-logo" class="image-alignment" src="Images/pizza-logo.png"
+                alt="Logo image of okotoks pizza shop">
+        </div>
+        <div id="desktop-spacer">
+        </div>
+        <div id="desktop-menu-options">
+
+            <div>
+                <a class="menu-list" href="/pages/AboutUs.html">|About|</a>
+            </div>
+            <div>
+                <a class="menu-list" href="/pages/Menu.html">|Menu|</a>
+            </div>
+            <div>
+                <a class="menu-list" href="/pages/Location.html">|Location|</a>
+            </div>
+        </div>
 
     </div>
-    <!---menu for desktop
-        <div id="m-about">
-
-        </div>
-        <div id="m-menu">
-
-        </div>
-        <div id="m-location">
-
-        </div>
-        <div id="m-team">
-
-        </div>
-
-    </div> -->
 
 
     <!---Content Section-->
     <div id="body-content">
         <!---a background image with these text lines-->
-        
+
         <div>
             <a id="a-headTxt" href="/pages/AboutUs.html">
                 <h1 class="text1-heading">Okotoks Pizza</h1>
             </a>
             <h3 class="text1-heading">First and Best in Town!</h3>
-            <!--<img id="conten1-img" src="/Images/BG1.jpg" alt="">-->
+
         </div>
-        
-        <div >
+
+        <div>
             <p id="order-animate" class="spacer">Order Now!</p>
             <a id="phone-animate" class="spacer" href="tel:4031231234">(403)123-1234</a>
         </div>
         <div id="body-content1">
 
-            <!-- <img  id="bg-image1" src="Images/BG-tablet.jpg" alt="background image having a pizza, tomato and dough">-->
+            <img id="bg-image1" src="Images/BG1.jpg" alt="background image having a pizza, tomato and dough">
 
         </div>
-
-
-
 
         <!---will have an image of pizza and will connect to the menu page-->
         <div id="body-content3">
@@ -110,7 +118,7 @@
     </div>
     <!--Pagination for menu-->
 
-    
+
     <div class="pagination">
         <a href="#">&laquo;</a>
         <a href="/pages/Menu.html">1</a>
@@ -145,9 +153,12 @@
         </div>
         <br>
         <div id="social-container">
-            <a href="#"> <img class="Social-imgs" src="Images/FB.png" alt="social media image for Facebook"></a>
-            <a href="#"> <img class="Social-imgs" src="Images/TWT.png" alt="social media image for Twitter"></a>
-            <a href="#"> <img class="Social-imgs" src="Images/INST.png" alt="social media image for Instagram"> </a>
+            <a href="https://www.Facebook.com/facebook/" target="_blank"> <img class="Social-imgs" src="Images/FB.png"
+                    alt="social media image for Facebook"></a>
+            <a href="https://www.Twitter.com/Twitter"> <img class="Social-imgs" src="Images/TWT.png"
+                    alt="social media image for Twitter"></a>
+            <a href="https://www.instagram.com/instagram/" target="_blank"> <img class="Social-imgs"
+                    src="Images/INST.png" alt="social media image for Instagram"> </a>
         </div>
 
     </div>
@@ -157,10 +168,8 @@
 
     </div>
 
-    <!---Footer Section-->
-
+    <!--- Mobile Footer Section-->
     <div id="footer">
-
         <div>
             <a href="/pages/Privacy.html">Privacy</a>
         </div>
@@ -171,12 +180,37 @@
             <a href="/pages/Privacy.html">Term of Use</a>
         </div>
 
+    </div>
+    <!---closing for mobile Footer Section-->
+
+    <!---Desktop Footer Section-->
+    <div id="footer-desktop">
+        <div id="footer-desk-privacy">
+            <div>
+                <a class="footer-desk-text" href="/pages/Privacy.html">Privacy</a>
+            </div>
+            <div>
+                <a class="footer-desk-text" href="/pages/Privacy.html">Accessibility</a>
+            </div>
+            <div>
+                <a class="footer-desk-text" href="/pages/Privacy.html">Term of Use</a>
+            </div>
+        </div>
+        <div>
+            <h4 id="fone" > tel: (403)123-123</h4>
+        </div>
+
+        <div id="social-container-desktop">
+            <h4 class="footer-desk-text">Connet | Give Feedback </h4>
+            <a  href="https://www.Facebook.com/facebook/" target="_blank"> <img class="Social-imgs"
+                    src="Images/FB.png" alt="social media image for Facebook"></a>
+            <a href="https://www.Twitter.com/Twitter"> <img class="Social-imgs" src="Images/TWT.png"
+                    alt="social media image for Twitter"></a>
+            <a href="https://www.instagram.com/instagram/" target="_blank"> <img class="Social-imgs"
+                    src="Images/INST.png" alt="social media image for Instagram"> </a>
+        </div>
 
     </div>
-
-
-    <!---closing for Footer Section-->
-
 
 
 </body>
