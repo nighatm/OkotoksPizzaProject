@@ -59,160 +59,208 @@
     <!---menu for desktop    -->
     <div id="desktop-menu-header">
         <div id="desktop-logo">
-            <img id="pizza-logo" class="image-alignment" src="Images/pizza-logo.png"
-                alt="Logo image of okotoks pizza shop">
+            <img id="pizza-logo" src="Images/pizza-logo.png" alt="Logo image of okotoks pizza shop">
         </div>
         <div id="desktop-spacer">
+            <h4> </h4>
         </div>
-        <div id="desktop-menu-options">
+        <div>
 
             <div>
-                <a class="menu-list" href="/pages/AboutUs.html">|About|</a>
+                <a id="m1" class="menu-list" href="index.html">|Home|</a>
             </div>
             <div>
-                <a class="menu-list" href="/pages/Menu.html">|Menu|</a>
+                <a id="m2" class="menu-list" href="/pages/AboutUs.html">|About|</a>
             </div>
             <div>
-                <a class="menu-list" href="/pages/Location.html">|Location|</a>
+                <a id="m3" class="menu-list" href="/pages/Menu.html">|Menu|</a>
+            </div>
+            <div>
+                <a id="m4" class="menu-list" href="/pages/Location.html">|Location|</a>
             </div>
         </div>
 
     </div>
+    <!--Desktop Content Section-->
 
+    <div id="dektop-content">
+        <div id="content1">
+            <div>
+                <h2 id="conten1-headings">First and Best in Town</h2>
+                <br>
+                <p id="content1-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore quam, impedit voluptate alias
+                    consequuntur nostrum nihil ad sed quasi, sapiente quisquam fuga nemo amet adipisci natus debitis!
+                    Est, pariatur unde.</p>
+            </div>
+            <div>
+                <img src="/Images/BG1.jpg" alt="">
 
-    <!---Content Section-->
-    <div id="body-content">
-        <!---a background image with these text lines-->
+            </div>
 
-        <div>
-            <a id="a-headTxt" href="/pages/AboutUs.html">
-                <h1 class="text1-heading">Okotoks Pizza</h1>
-            </a>
-            <h3 class="text1-heading">First and Best in Town!</h3>
 
         </div>
-
-        <div>
-            <p id="order-animate" class="spacer">Order Now!</p>
-            <a id="phone-animate" class="spacer" href="tel:4031231234">(403)123-1234</a>
+        <div id="content2">
+            <div>
+                <h2>First and Best in Town</h2>
+                <img src="/Images/Dine2.jpg" alt="">
+            </div>
+            <div>
+                <img src="/Images/BG1.jpg" alt="">
+            </div>
         </div>
-        <div id="body-content1">
-
-            <img id="bg-image1" src="Images/BG1.jpg" alt="background image having a pizza, tomato and dough">
-
+        <div id="content3">
+            <div>
+                <h2>First and Best in Town</h2>
+                <img src="/Images/Dine3.jpg" alt="">
+            </div>
+            <div>
+                <img src="/Images/BG1.jpg" alt="">
+            </div>
         </div>
 
-        <!---will have an image of pizza and will connect to the menu page-->
-        <div id="body-content3">
-            <a id="conten3-menu-link" href="/pages/Menu.html">
-                <h1>Explore Menu ... </h1>
-            </a>
-            <a id="conten3-menu-link" href="/pages/Menu.html">
-                <h2>Classic + Special</h2>
-            </a>
+
+        <!--End Desktop Content Section-->
+
+
+        <!---Mobile Content Section-->
+        <div id="body-content">
+            <!---a background image with these text lines-->
+
+            <div>
+                <a id="a-headTxt" href="/pages/AboutUs.html">
+                    <h1 class="text1-heading">Okotoks Pizza</h1>
+                </a>
+                <h3 class="text1-heading">First and Best in Town!</h3>
+
+            </div>
+
+            <div>
+                <p id="order-animate" class="spacer">Order Now!</p>
+                <a id="phone-animate" class="spacer" href="tel:4031231234">(403)123-1234</a>
+            </div>
+            <div id="body-content1">
+
+                <img id="bg-image1" src="Images/BG1.jpg" alt="background image having a pizza, tomato and dough">
+
+            </div>
+
+            <!---will have an image of pizza and will connect to the menu page-->
+            <div id="body-content3">
+                <a id="conten3-menu-link" href="/pages/Menu.html">
+                    <h1>Explore Menu ... </h1>
+                </a>
+                <a id="conten3-menu-link" href="/pages/Menu.html">
+                    <h2>Classic + Special</h2>
+                </a>
+                <br>
+                <a href="/pages/Menu.html"> <img class="image-alignment" src="Images/indexpizza.jpg"
+                        alt="pizza image, and linked with the menu page"></a>
+            </div>
+
+        </div>
+        <!--Pagination for menu-->
+
+
+        <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="/pages/Menu.html">1</a>
+            <a class="active" href="/pages/Menu.html">2</a>
+            <a href="/pages/Menu.html">3</a>
+            <a href="#">&raquo;</a>
+        </div>
+        <br>
+        <h3 class="text2-heading">Okotoks Pizzas are made with only the freshest ingredients like mozzarella, roma
+            tomatoes,
+            made-from-scratch sauce and even features premium toppings like Pepperoni, Chicken
+            and a healthy Flax crust.</h3>
+
+
+        <!---this section with a video and text line as heading-->
+        <div id="body-content2">
+            <h2 class="text1-heading">The secret history ... of</h2>
+            <h2 class="text1-heading">Pizza?</h2>
             <br>
-            <a href="/pages/Menu.html"> <img class="image-alignment" src="Images/indexpizza.jpg"
-                    alt="pizza image, and linked with the menu page"></a>
+            <iframe height="280" id="video-content2" src="https://www.youtube.com/embed/PRn5iONxSQQ">
+            </iframe>
         </div>
 
-    </div>
-    <!--Pagination for menu-->
-
-
-    <div class="pagination">
-        <a href="#">&laquo;</a>
-        <a href="/pages/Menu.html">1</a>
-        <a class="active" href="/pages/Menu.html">2</a>
-        <a href="/pages/Menu.html">3</a>
-        <a href="#">&raquo;</a>
-    </div>
-    <br>
-    <h3 class="text2-heading">Okotoks Pizzas are made with only the freshest ingredients like mozzarella, roma tomatoes,
-        made-from-scratch sauce and even features premium toppings like Pepperoni, Chicken
-        and a healthy Flax crust.</h3>
-
-
-    <!---this section with a video and text line as heading-->
-    <div id="body-content2">
-        <h2 class="text1-heading">The secret history ... of</h2>
-        <h2 class="text1-heading">Pizza?</h2>
-        <br>
-        <iframe height="280" id="video-content2" src="https://www.youtube.com/embed/PRn5iONxSQQ">
-        </iframe>
-    </div>
-
-    <!---this section with a video and text line as heading-->
-    <!--social media section-->
-    <div id="body-content4-socialmedia">
-        <div>
-            <h2 class="text2-heading">Connet!</h2>
-        </div>
-        <div>
-            <h2 class="text2-heading">Give Feedback...</h2>
-
-        </div>
-        <br>
-        <div id="social-container">
-            <a href="https://www.Facebook.com/facebook/" target="_blank"> <img class="Social-imgs" src="Images/FB.png"
-                    alt="social media image for Facebook"></a>
-            <a href="https://www.Twitter.com/Twitter"> <img class="Social-imgs" src="Images/TWT.png"
-                    alt="social media image for Twitter"></a>
-            <a href="https://www.instagram.com/instagram/" target="_blank"> <img class="Social-imgs"
-                    src="Images/INST.png" alt="social media image for Instagram"> </a>
-        </div>
-
-    </div>
-    <div id="id-top">
-        <a href="#top">| Go to Top |</a>
-
-
-    </div>
-
-    <!--- Mobile Footer Section-->
-    <div id="footer">
-        <div>
-            <a href="/pages/Privacy.html">Privacy</a>
-        </div>
-        <div>
-            <a href="/pages/Privacy.html">Accessibility</a>
-        </div>
-        <div>
-            <a href="/pages/Privacy.html">Term of Use</a>
-        </div>
-
-    </div>
-    <!---closing for mobile Footer Section-->
-
-    <!---Desktop Footer Section-->
-    <div id="footer-desktop">
-        <div id="footer-desk-privacy">
+        <!---this section with a video and text line as heading-->
+        <!--social media section-->
+        <div id="body-content4-socialmedia">
             <div>
-                <a class="footer-desk-text" href="/pages/Privacy.html">Privacy</a>
+                <h2 class="text2-heading">Connet!</h2>
             </div>
             <div>
-                <a class="footer-desk-text" href="/pages/Privacy.html">Accessibility</a>
+                <h2 class="text2-heading">Give Feedback...</h2>
+
             </div>
-            <div>
-                <a class="footer-desk-text" href="/pages/Privacy.html">Term of Use</a>
+            <br>
+            <div id="social-container">
+                <a href="https://www.Facebook.com/facebook/" target="_blank"> <img class="Social-imgs"
+                        src="Images/FB.png" alt="social media image for Facebook"></a>
+                <a href="https://www.Twitter.com/Twitter"> <img class="Social-imgs" src="Images/TWT.png"
+                        alt="social media image for Twitter"></a>
+                <a href="https://www.instagram.com/instagram/" target="_blank"> <img class="Social-imgs"
+                        src="Images/INST.png" alt="social media image for Instagram"> </a>
             </div>
+
         </div>
-        <div>
-            <h4 id="fone" > tel: (403)123-123</h4>
+        <div id="id-top">
+            <a href="#top">| Go to Top |</a>
+
+        </div>
+        <div id="id-top-desktop">
+            <a href="#top">| Go to Top |</a>
+
         </div>
 
-        <div id="social-container-desktop">
-            <h4 class="footer-desk-text">Connet | Give Feedback </h4>
-            <a  href="https://www.Facebook.com/facebook/" target="_blank"> <img class="Social-imgs"
-                    src="Images/FB.png" alt="social media image for Facebook"></a>
-            <a href="https://www.Twitter.com/Twitter"> <img class="Social-imgs" src="Images/TWT.png"
-                    alt="social media image for Twitter"></a>
-            <a href="https://www.instagram.com/instagram/" target="_blank"> <img class="Social-imgs"
-                    src="Images/INST.png" alt="social media image for Instagram"> </a>
+        <!--- Mobile Footer Section-->
+        <div id="footer">
+            <div>
+                <a href="/pages/Privacy.html">Privacy</a>
+            </div>
+            <div>
+                <a href="/pages/Privacy.html">Accessibility</a>
+            </div>
+            <div>
+                <a href="/pages/Privacy.html">Term of Use</a>
+            </div>
+
+        </div>
+        <!---closing for mobile Footer Section-->
+
+
+
+        <!---Desktop Footer Section-->
+        <div id="footer-desktop">
+            <div id="footer-desk-privacy">
+                <div>
+                    <a class="footer-desk-text" href="/pages/Privacy.html">Privacy</a>
+                </div>
+                <div>
+                    <a class="footer-desk-text" href="/pages/Privacy.html">Accessibility</a>
+                </div>
+                <div>
+                    <a class="footer-desk-text" href="/pages/Privacy.html">Term of Use</a>
+                </div>
+            </div>
+            <div>
+                <h4 id="fone"> tel: (403)123-123</h4>
+            </div>
+
+            <div id="social-container-desktop">
+                <h4 class="footer-desk-text">Connet | Give Feedback </h4>
+                <a href="https://www.Facebook.com/facebook/" target="_blank"> <img class="Social-imgs"
+                        src="Images/FB.png" alt="social media image for Facebook"></a>
+                <a href="https://www.Twitter.com/Twitter"> <img class="Social-imgs" src="Images/TWT.png"
+                        alt="social media image for Twitter"></a>
+                <a href="https://www.instagram.com/instagram/" target="_blank"> <img class="Social-imgs"
+                        src="Images/INST.png" alt="social media image for Instagram"> </a>
+            </div>
+
         </div>
 
     </div>
-
-
 </body>
 
 </html>
