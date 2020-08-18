@@ -4,124 +4,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---Meta tags for search optimization-->
+    <meta name="author" content="Dough's Pizza">
+    <meta name="about"
+        content="okotoks Pizza, take out, delivery, dine in, catering services, sitting place, family environment, family place, friends place, gathering">
+    <meta name="pizza place" content="okotoks Pizza,dine, take away, family place">
+    <meta name="services" content="dine in, eating place, delivery, catering">
+    <!---for image icon on explorer and linking of style sheet-->
     <link rel="shortcut icon" type="image/png" href="../Images/pizza-logo.png">
-
     <link rel="stylesheet" href="../css/style.css" type="text/css" type="text/css">
     <title>About Us</title>
 </head>
 
-<body id="grid-container">
-    <!--Desktop Menu-->
-    <div id="desktop-menu-header">
-        <div id="desktop-logo">
-            <img id="pizza-logo" src="../Images/pizza-logo.png" alt="Logo image of okotoks pizza shop">
-        </div>
-        <div id="desktop-spacer">
-            <h4> </h4>
-        </div>
-        <div>
+<body>
+    <div>
 
-            <div>
-                <a id="m1" class="menu-list" href="../index.html">|Home|</a>
+        <div id="Mobile-Screen">
+            <!---Mobile Header Section  -->
+            <div id="mobile-header">
+                <div id="logo-header">
+                    <a href="../index.html"> <img id="mob-logo-img" src="../Images/pizza-logo.png"
+                            alt="Logo image of okotoks pizza shop">
+                    </a>
+                </div>
+                <div id="header-space">
+                    <a class="spacer" href="tel:4031231234">(403)123-1234</a>
+                </div>
+
+                <div id="mobile-hamburger-menu">
+
+                    <input type="checkbox" name="mobile-menu-checkbox" id="mobile-menu-checkbox">
+
+                    <div id="mobile-hamburger-container">
+                        <span id="mobile-line-1" class="mobile-hamburger-line"></span>
+                        <span id="mobile-line-2" class="mobile-hamburger-line"></span>
+                        <span id="mobile-line-3" class="mobile-hamburger-line"></span>
+                        <span id="mobile-line-4" class="mobile-hamburger-line"></span>
+
+                    </div>
+
+                    <div id="mobile-header-menu">
+
+                        <a href="../pages/Location.html">Location</a>
+                        <a href="../pages/AboutUs.html">About Us</a>
+                        <a href="../pages/Menu.html">Menu</a>
+                        <a href="../index.html">Home</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--Desktop Menu-->
+        <div id="desktop-menu-header">
+            <div id="desktop-logo">
+                <img id="pizza-logo" src="../Images/pizza-logo.png" alt="Logo image of okotoks pizza shop">
+            </div>
+            <div id="desktop-spacer">
+                <h4> tel: (403)123-123</h4>
             </div>
             <div>
-                <a id="m2" class="menu-list" href="../pages/AboutUs.html">|About|</a>
-            </div>
-            <div>
-                <a id="m3" class="menu-list" href="../pages/Menu.html">|Menu|</a>
-            </div>
-            <div>
-                <a id="m4" class="menu-list" href="../pages/Location.html">|Location|</a>
-            </div>
-        </div>
 
-    </div>
-    <!---Mobile Header Section  -->
-    <div id="mobile-header">
-        <div id="logo-header">
-            <img id="mob-logo-img" src="../Images/pizza-logo.png" alt="Logo image of okotoks pizza shop">
-        </div>
-        <div id="header-space">
-            <a class="spacer" href="tel:4031231234">(403)123-1234</a>
-        </div>
-
-        <div id="mobile-hamburger-menu">
-
-            <input type="checkbox" name="mobile-menu-checkbox" id="mobile-menu-checkbox">
-
-            <div id="mobile-hamburger-container">
-                <span id="mobile-line-1" class="mobile-hamburger-line"></span>
-                <span id="mobile-line-2" class="mobile-hamburger-line"></span>
-                <span id="mobile-line-3" class="mobile-hamburger-line"></span>
-                <span id="mobile-line-4" class="mobile-hamburger-line"></span>
-
-            </div>
-
-            <div id="mobile-header-menu">
-
-                <a href="../pages/Location.html">Location</a>
-                <a href="../pages/AboutUs.html">About Us</a>
-                <a href="../pages/Menu.html">Menu</a>
-                <a href="../index.html">Home</a>
+                <div>
+                    <a id="m1" class="menu-list" href="../index.html">|Home|</a>
+                </div>
+                <div>
+                    <a id="m2" class="menu-list" href="../pages/AboutUs.html">|About|</a>
+                </div>
+                <div>
+                    <a id="m3" class="menu-list" href="../pages/Menu.html">|Menu|</a>
+                </div>
+                <div>
+                    <a id="m4" class="menu-list" href="../pages/Location.html">|Location|</a>
+                </div>
             </div>
 
         </div>
-        <!--closing for hamburger div-->
 
-    </div>
-    <!--closing for mobile header div-->
+        <!---Mobile Content Section-->
+        <div id="about-content">
+            <div class="about-txt">
+                <!--<img class="about-img" src="../Images/PizzaMan.png" alt="image showing family environment">-->
+                <h2 class="headings-about">About Us!</h2>
+                <p class="about-txt">There are no short cuts when it comes to our passion. We pull out all the stops,
+                    giving
+                    you the ‘wow’ flavour, experience and consistency you not only want, but deserve. Our customers keep
+                    coming back, again, again, and again.</p>
+                <br>
+                <h4 class="headings-about">We have Pick Up, Dine in and Catering services.</h4>
+                <br>
 
+                <a id="catering" class="phone-animate" href="../pages/Order.html">Catering Services!</a>
 
-    <!---Content Section-->
-    <div id="about-content">
-        <div class="about-p">
-            <h2 id="about-us">About Us!</h2>
-            <p class="about-p">There are no short cuts when it comes to our passion. We pull out all the stops, giving
-                you the ‘wow’ flavour, experience and consistency you not only want, but deserve. Our customers keep
-                coming back, again, again, and again.</p>
-            <img class="about-img" src="../Images/PizzaMan.png" alt="image showing family environment">
+                <br><br>
+                <iframe height="280" id="video-content2" src="https://www.youtube.com/embed/xbHbcmQIcAQ">
+                </iframe>
+            </div>
+            <div id="mobile-screen">
+           <div id="about-us-mobile">
+               <h2 class="about-us">Family Environment</h2>
+                <p class="about-txt">We’re a small but nimble family-run take out and delivery pizza shop in Okotoks,
+                    Alberta.
+                    When we’re not scouring the globe (okay, the prairies) for the freshest, ripest and boldest
+                    ingredients,
+                    we’re crafting perfect pizzas for you and your family to enjoy. From hot Hawaiians and classic
+                    Canadians
+                    to crispy wings and decadent fudge brownies, everything at Okotoks Pizza is baked with love.</p>
+                <img class="about-img" src="../Images/FamilyP1.jpg" alt="showing family environment">
+           </div>
+             <div id="about-us-mobile">
+               <h2 class="about-us">Family Environment</h2>
+                <p class="about-txt">We’re a small but nimble family-run take out and delivery pizza shop in Okotoks,
+                    Alberta.
+                    When we’re not scouring the globe (okay, the prairies) for the freshest, ripest and boldest
+                    ingredients,
+                    we’re crafting perfect pizzas for you and your family to enjoy. From hot Hawaiians and classic
+                    Canadians
+                    to crispy wings and decadent fudge brownies, everything at Okotoks Pizza is baked with love.</p>
+                <img class="about-img" src="../Images/FamilyP1.jpg" alt="showing family environment">
+           </div>
 
-
-        </div>
-        <div id="about-us2">
-            <h2 class="about-p">Family Environment</h2>
-            <p class="about-p">We’re a small but nimble family-run take out and delivery pizza shop in Okotoks, Alberta.
-                When we’re not scouring the globe (okay, the prairies) for the freshest, ripest and boldest ingredients,
-                we’re crafting perfect pizzas for you and your family to enjoy. From hot Hawaiians and classic Canadians
-                to crispy wings and decadent fudge brownies, everything at Okotoks Pizza is baked with love.</p>
-            <img class="about-img" src="../Images/FamilyP1.jpg" alt="showing family environment">
-
-        </div>
-        <div>
-            <h2 class="about-p">Dine In</h2>
+           <div id="dine-in-mobile">
+            <h2 class="about-us">Dine In</h2>
+            <br>
             <img class="about-img" src="../Images/Dine2.jpg" alt="showing a restaurant dine in environment">
 
-            <p class="about-p">We’re a small but nimble family-run take out and delivery pizza shop in Okotoks, Alberta.
-                When we’re not scouring the globe (okay, the prairies) for the freshest, ripest and boldest ingredients,
-                we’re crafting perfect pizzas for you and your family to enjoy. From hot Hawaiians and classic Canadians
+            <p class="about-txt">We’re a small but nimble family-run take out and delivery pizza shop in Okotoks,
+                Alberta.
+                When we’re not scouring the globe (okay, the prairies) for the freshest, ripest and boldest
+                ingredients,
+                we’re crafting perfect pizzas for you and your family to enjoy. From hot Hawaiians and classic
+                Canadians
                 to crispy wings and decadent fudge brownies, everything at Okotoks Pizza is baked with love.</p>
             <img class="about-img" src="../Images/Dine3.jpg" alt="showing a restaurant dine in environment">
+        </div>
+        </div> <!--end mobile screen-->
+        
+       
+        <div id="family-desktp">
+            <h2 class="about-us-family">Family Environment</h2>
+            <p class="about-txt">We’re a small but nimble family-run take out and delivery pizza shop in Okotoks,
+                Alberta.
+                When we’re not scouring the globe (okay, the prairies) for the freshest, ripest and boldest
+                ingredients,
+                we’re crafting perfect pizzas for you and your family to enjoy. From hot Hawaiians and classic
+                Canadians
+                to crispy wings and decadent fudge brownies, everything at Okotoks Pizza is baked with love.</p>
+            <img id="about-image2" src="../Images/familypizza3.jpg" alt="showing a restaurant dine in environment">
+           </div>
 
 
+        <!--- Mobile Footer Section-->
+
+        <div id="footer">
+
+            <div>
+                <a href="/pages/Privacy.html">Privacy</a>
+            </div>
+            <div>
+                <a href="/pages/Privacy.html">Accessibility</a>
+            </div>
+            <div>
+                <a href="/pages/Privacy.html">Term of Use</a>
+            </div>
+
         </div>
-        <div id="id-top-desktop">
-            <a href="#top">| Go to Top |</a>
-        </div>
+
+
+
+
+        <!---Desktop Footer Section-->
         <div id="footer-desktop">
             <div id="footer-desk-privacy">
                 <div>
-                    <a class="footer-desk-text" href="../pages/Privacy.html">Privacy</a>
+                    <a class="footer-desk-text" href="/pages/Privacy.html">Privacy</a>
                 </div>
                 <div>
-                    <a class="footer-desk-text" href="../pages/Privacy.html">Accessibility</a>
+                    <a class="footer-desk-text" href="/pages/Privacy.html">Accessibility</a>
                 </div>
                 <div>
-                    <a class="footer-desk-text" href="../pages/Privacy.html">Term of Use</a>
+                    <a class="footer-desk-text" href="/pages/Privacy.html">Term of Use</a>
                 </div>
+
             </div>
-            <div>
-                <h4 id="fone"> tel: (403)123-123</h4>
-            </div>
+            <div></div>
 
             <div id="social-container-desktop">
                 <h4 class="footer-desk-text">Connet | Give Feedback </h4>
@@ -132,49 +198,25 @@
                 <a href="https://www.instagram.com/instagram/" target="_blank"> <img class="Social-imgs"
                         src="../Images/INST.png" alt="social media image for Instagram"> </a>
             </div>
+           
+
 
         </div>
+    </div>
 
-       
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
-        <!--social media section-->
-        <div id="body-content4-socialmedia">
-            <div>
-                <h2 class="text2-heading">Connet!</h2>
-            </div>
-            <div>
-                <h2 class="text2-heading">Give Feedback...</h2>
-
-            </div>
-            <div id="social-container">
-                <a href="https://www.Facebook.com/facebook/" target="_blank"> <img class="Social-imgs" src="../Images/FB.png" alt="social media image for Facebook"></a>
-                <a href="https://www.Twitter.com/Twitter"> <img class="Social-imgs" src="../Images/TWT.png" alt="social media image for Twitter"></a>
-                <a href="https://www.instagram.com/instagram/" target="_blank"> <img class="Social-imgs" src="../Images/INST.png" alt="social media image for Instagram"> </a>
-            </div>
-            <div id="id-top">
-                <a href="#top">| Go to Top |</a>
-        
-        
-            </div>
-            <!---Footer Section-->
-            
-
-            <div id="footer">
-
-                <div>
-                    <a href="/pages/Privacy.html">Privacy</a>
-                </div>
-                <div>
-                    <a href="/pages/Privacy.html">Accessibility</a>
-                </div>
-                <div>
-                    <a href="/pages/Privacy.html">Term of Use</a>
-                </div>
-
-            </div>
-            <!---closing for Footer Section-->
-
-
 
 </body>
 
