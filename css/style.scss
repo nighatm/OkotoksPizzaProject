@@ -791,12 +791,14 @@
             margin-bottom: 5vh;
         } 
        .itop{
+           width: 100%;
            text-align: center;
            color: black;
            text-decoration: none;
            margin-bottom: 5vh;
        }
        #family-desktp{
+        display: block;
         color:$font-color-black;
         width: 90%;
        
